@@ -10,7 +10,7 @@ const TimeExpand = () => {
   useEffect(() => {
     const fetchTimeData = async () => {
       try {
-        const json = await fetchData("http://worldtimeapi.org/api/ip");
+        const json = await fetchData("https://worldtimeapi.org/api/ip");
         const timezone = json.timezone;
         const dayOfYear = json.day_of_year;
         const dayOfWeek = json.day_of_week;
