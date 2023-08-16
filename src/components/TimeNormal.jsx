@@ -15,7 +15,7 @@ const TimeNormal = () => {
 
   useEffect(() => {
     const fetchDataAndInitialize = async () => {
-      const json = await fetchData("http://worldtimeapi.org/api/ip");
+      const json = await fetchData("https://worldtimeapi.org/api/ip");
       const formattedTime = timeConverter(json.datetime);
       const timezone = json.abbreviation;
       const region = json.timezone;
